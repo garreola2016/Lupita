@@ -2,7 +2,7 @@
 <!--Name: Guadalupe Arreola
 	User name: garreola2016
 	Date: 05/24/2019
-	last revision: 05/29/2019
+	last revision: 06/02/2019
 	-->
 	
 <html lang="en">
@@ -16,8 +16,10 @@
 			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 			<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
 	
-	<!-- styles for carousel and table -->
+
 	<style>
+	
+			<!-- styles for carousel and table -->
 		.item {
             background: #A3E4D7;
             text-align: center;
@@ -31,36 +33,38 @@
             font-size: 30px;
         }
 		
-		table {
-				width: 75%;
-				margin: auto;
-				border: none;
-			}	
-	
-		th {
-			color: #1B4F72;
+		<!-- styles for the dishes names -->
+		h3 {
+           color: #1B4F72;
 			font-size: 20px;
 			font-weight: bold;
 			font-family: "Palatino Linotype", Palatino; 
 			font-variant: small-caps;
 			text-align: center;
-			} 
-		td {
+        }
+		
+		<!-- styles for grid's name: food/beverages -->
+		h1 {
+			background-color: #1B4F72;
+			color: white;
+			font-weight: bold;
+			font-family: "Palatino Linotype", Palatino; 
+			font-size: 2.1em;
+			font-variant: small-caps;
+			caption-side: top;
+		}
+		
+		<!-- styles for grid system -->
+		.container {
 			background-color: #CACFD2;
 			color: black;
 			font-size: 1em;
-			} 
-		caption {
-			background-color: white;
-			color: #1B4F72;
-			font-weight: bold;
-			font-family: "Palatino Linotype", Palatino; 
-			font-size: 1.5em;
-			font-variant: small-caps;
-			caption-side: top;
-			text-align: center;
-		}
-
+			width: 100%;
+			margin: auto;
+			border: none;
+		} 
+			
+	
 	</style>
 </head>
 
@@ -106,135 +110,168 @@
         </div>
     </div>
 	<!-- carousel ends -->	
-
-	<table class="table table-striped">
-		<thead class="thead-light">
-			<tr>
-			  <th scope="col">Burger and Fries</th>
-			  <th scope="col">Hot Dog and Chips</th>
-			  <th scope="col">Italian Sausage and Peppers</th>
-			</tr>
-		</thead>
-  
-		<tbody>
-			<tr>
-				<td>
+	
+	
+	
+	<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Food</h1>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Burger and Fries</h3>
 					<p>An American Classic!
 					Your Choice- with or without cheese
 					Pickle, onion, tomato, and lettuce
 					Served with our famous thich cut
 					french fries</p>
-					<p>$7.95</p>
-				</td>
+				</div>
 				
-				<td>
+				<div class="col">
+					<h3>Hot Dog and Chips</h3>
 					<p>A summer Classic!
 					Your choice - white or wheat bun
 					Relish, mustard, and ketchup
 					Served with our house-made chips</p>
-					<p>$7.95</p>
-				</td>
-				
-				<td>
+				</div>
+			
+				<div class="col">
+					<h3>Italian Sausage and Peppers</h3>
 					<p>An All- Time Favorite!
 					Your choice- mild or spicy Cole Slaw
 					Served with garlic mashers</p>
-					<p>$10.95</p>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+				</div>
+			</div>
+		</div>
 	
-	 <table class="table table-striped">
-		<thead class="thead-light">
-			<tr>
-			  <th scope="col">Tenderloin Sandwich and Chips</th>
-			  <th scope="col">House Salad</th>
-			  <th scope="col">Brisket Sandwhich and Fries</th>
-			</tr>
-		</thead>
-		
-		<tbody>
-			<tr>
-				<td>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					$7.95
+				</div>
+				
+				<div class="col">
+					$7.95
+				</div>
+			
+				<div class="col">
+					$10.95
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Tenderloin Sandwich and Chips</h3>
 					<p>Really Hits the Spot!
 					Plain or Sesame Seed Bun
 					Pickle, onion, tomato, and lettuce
 					Served with our house-made chips</p>
-					<p>$8.95</p>
-				</td>
+				</div>
 				
-				<td>
+				<div class="col">
+					<h3>House Salad</h3>
 					<p>On the Lighter Side
 					Your choice- with or without cheese
 					Iceberg lettuce, tomatoes, peppers
 					Thousand Island or Ranch
 					Dressing Served with a dinner roll</p>
-					<p>$6.95</p>
-				</td>
-				
-				<td>
+				</div>
+			
+				<div class="col">
+					<h3>Brisket Sandwhich and Fries</h3>
 					<p>A Taste of Texas!
 					Smoked Brisket on thich-cut
 					Texas Toast
 					Cloe Slaw
 					Served with our famous thich-cut
 					french fries</p>
-					<p>$7.95</p>
-				</td>
-			</tr>
-   
-		</tbody>
-	</table>
+				</div>
+			</div>
+		</div>
 	
-	<table class="table table-sm">
-		<thead>
-			<caption>Beverages</caption>
-				<tbody>
-					<tr>
-						<td>
-							<p> Root Beer</p>
-						</td>
-						<td>
-							<p> $3.00</p>
-						</td>
-					</tr>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						$8.95
+					</div>
+				
+					<div class="col">
+						$6.95
+					</div>
 			
-					<tr>
-						<td>
-							<p> Bottled Water</p>
-						</td>
-						
-						<td>
-							<p> $1.25</p>
-						</td>
-							
-					</tr>
-			
-					<tr>
-						<td>
-							<p> Lemonade</p>
-						</td>
-						
-						<td>
-							<p> $1.00</p>
-						</td>
-					</tr>
-			
-					<tr>
-						<td>
-							<p> Iced Tea</p>
-						</td>
-						
-						<td>
-							<p> $1.25</p>
-						</td>
-							
-					</tr>
-				</tbody>
-	</table>
+					<div class="col">
+						$7.95
+					</div>
+				</div>
+			</div>
+	
+	<br />
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Beverages</h1>
+				</div>
+			</div>
+		</div>
 	
 	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Root Beer</h3>
+				</div>
+				
+				<div class="col">
+					<h3>$3.00</h3>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Bottled Water</h3>
+				</div>
+				
+				<div class="col">
+					<h3>$1.25</h3>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Lemonade</h3>
+				</div>
+				
+				<div class="col">
+					<h3>$1.00</h3>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>Iced Tea</h3>
+				</div>
+				
+				<div class="col">
+					<h3>$1.25</h3>
+				</div>
+			</div>
+		</div>
+
 	<footer>
 		<hr />
 		<p>2733 Main Street, Dallas, TX, 75222 </p>
